@@ -1,0 +1,176 @@
+{
+  "info": {
+    "_postman_id": "f58b1f88-c2ac-4388-81a3-8ace91da87f3",
+    "name": "BT03",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54649143",
+    "_collection_link": "https://go.postman.co/collection/54649143-f58b1f88-c2ac-4388-81a3-8ace91da87f3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept-Charset",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "Trần Hồ Phương Nguyên",
+              "type": "text",
+              "uuid": "89b08b56-8d56-49b6-b938-b99175279304"
+            },
+            {
+              "key": "email",
+              "value": "phng12345@gmail.com",
+              "type": "text",
+              "uuid": "7feb4f71-1cd8-40d7-a7e0-8ac2f7034517"
+            },
+            {
+              "key": "password",
+              "value": "123456",
+              "type": "text",
+              "uuid": "3feb71e8-bcf1-4dfa-be7c-3841f88afebb"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/v1/api/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "api",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept-Charset",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "Phương Nguyên",
+              "type": "text",
+              "uuid": "89b08b56-8d56-49b6-b938-b99175279304"
+            },
+            {
+              "key": "email",
+              "value": "phng12@gmail.com",
+              "type": "text",
+              "uuid": "7feb4f71-1cd8-40d7-a7e0-8ac2f7034517"
+            },
+            {
+              "key": "password",
+              "value": "123456",
+              "type": "text",
+              "uuid": "3feb71e8-bcf1-4dfa-be7c-3841f88afebb"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/v1/api/login?email=phng12345@gmail&password=123456",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "api",
+            "login"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "phng12345@gmail"
+            },
+            {
+              "key": "password",
+              "value": "123456"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test api",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept-Charset",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "Phương Nguyên",
+              "type": "text",
+              "uuid": "89b08b56-8d56-49b6-b938-b99175279304"
+            },
+            {
+              "key": "email",
+              "value": "phng12@gmail.com",
+              "type": "text",
+              "uuid": "7feb4f71-1cd8-40d7-a7e0-8ac2f7034517"
+            },
+            {
+              "key": "password",
+              "value": "123456",
+              "type": "text",
+              "uuid": "3feb71e8-bcf1-4dfa-be7c-3841f88afebb"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/v1/api",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "api"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
